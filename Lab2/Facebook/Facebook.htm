@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Facebook Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
+    h1 {
+      color: #1877f2;
+      font-size: 40px;
+      margin: 0;
+    }
+    p {
+      color: #141823;
+      font-size: 18px;
+      line-height: 1.4;
+      margin: 0; 
+    }
+
+    #container {
+      display: table;        
+      width: 70%;           
+      margin: 40px auto;     
+    }
+
+    #leftBlock, #rightBlock {
+      display: table-cell;
+      vertical-align: top;   
+      padding: 10px;
+    }
+
+    #leftBlock {
+      width: 400px;
+      
+      padding-top: 80px; 
+    }
+
+    #rightBlock {
+      padding-top: 30px; 
+    }
+
+    #loginBox {
+      background-color: #fff;
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 300px;
+      padding: 20px;
+    }
+
+    #loginBox input,
+    #loginBox button {
+      display: block;      
+      width: 95%;
+      margin: 0 auto 10px;  
+      padding: 8px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    #loginBox input {
+      border: 1px solid #ccc;
+    }
+
+    #loginBox button {
+      background-color: #1877f2;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    #loginBox button:hover {
+      background-color: #145dbf;
+    }
+
+    #createAcc {
+      width: 48%;           
+      background-color: #42b72a;
+      display: block;
+      margin: 0 auto;        
+      padding: 8px;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    #createAcc:hover {
+      background-color: #36a420;
+    }
+
+    #forgotLink {
+      text-align: center;
+      display: block;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    #bottomSection {
+      background-color: #fff; 
+      padding: 20px 0;        
+    }
+
+    #languages {
+      text-align: center;
+      margin-bottom: 10px; 
+      font-size: 12px;
+      color: #666;
+    }
+    #languages a {
+      text-decoration: none;
+      color: #666;
+      margin: 0 5px;
+    }
+    #languages a:hover {
+      text-decoration: underline;
+    }
+
+    #bottomLine {
+      width: 70%;
+      margin: 0 auto 20px; 
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+
+    #footerLinks {
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      line-height: 1.6;
+      width: 70%;
+      margin: 0 auto;
+    }
+    #footerLinks a {
+      text-decoration: none;
+      color: #666;
+    }
+    #footerLinks a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="container">
+  <div id="leftBlock">
+    <h1>facebook</h1>
+    <p>Facebook помогает вам всегда<br>
+    оставаться на связи и общаться со<br>
+    своими знакомыми.</p>
+  </div>
+
+  <div id="rightBlock">
+    <div id="loginBox">
+      <form>
+        <input type="text" placeholder="Электронный адрес или номер телефона" required>
+        <input type="password" placeholder="Пароль" required>
+        <button type="submit"><strong>Вход</strong></button>
+        <a href="#" id="forgotLink">Забыли пароль?</a>
+      </form>
+      <hr>
+      <button id="createAcc"><strong>Создать аккаунт</strong></button>
+    </div>
+    <p style="text-align: center; margin-top: 15px; font-size: 14px;">
+      Создать Страницу знаменитости, музыкальной группы или компании.
+    </p>
+  </div>
+</div>
+
+<div id="bottomSection">
+  <div id="languages">
+    <a href="#">Русский</a>
+    <a href="#">English (US)</a>
+    <a href="#">Türkçe</a>
+    <a href="#">Bahasa Indonesia</a>
+    <a href="#">Қазақша</a>
+    <a href="#">中文(简体)</a>
+    <a href="#">Deutsch</a>
+    <a href="#">한국어</a>
+    <a href="#">Shqip</a>
+    <a href="#">Español</a>
+    <a href="#">Português (Brasil)</a>
+  </div>
+
+  <hr id="bottomLine">
+
+  <div id="footerLinks">
+         
+    <p>
+      Регистрация Вход Messenger Facebook Lite <br>
+      Facebook Pay Группы Вакансии Oculus
+    </p>
+    <p>
+      О нас I <br>
+      Создать рекламу Создать Страницу. <br>
+      Условия использования Справка
+    </p>
+    <p>
+      Люди Страницы <br>
+      Категории Страниц <br>
+      Благотворительные акции <br>
+      Разработчикам <br>
+      Вакансии | <br>
+      Конфиденциальность <br>
+      • Файлы cookie
+    </p>
+    <p>Facebook © 2021</p>
+    <p>
+      Marketplace <br>
+      Центр информации о голосовании <br>
+      Выбор рекламы 
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
