@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Microsoft Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    #header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      height: 60px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+    #logo {
+      display: flex;
+      align-items: center;
+    }
+    #logo img {
+      height: 30px;
+      margin-right: 10px;
+    }
+    #navLinks a {
+      color: #000;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+    #navLinks a:hover {
+      text-decoration: underline;
+    }
+
+    #hero {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background: url('https://via.placeholder.com/1200x400/0050A0/FFFFFF?text=Microsoft+Hero+Banner') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    #heroCard {
+      background-color: #fff;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    #heroCard h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    #heroCard p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+    .btn-blue {
+      background-color: #0078d4;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn-blue:hover {
+      background-color: #005a9e;
+    }
+
+    #sliderDots {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    #quickLinks {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+      gap: 30px;
+    }
+    #quickLinks a {
+      text-decoration: none;
+      text-align: center;
+      color: #0078d4;
+      font-size: 14px;
+    }
+    #quickLinks a:hover {
+      text-decoration: underline;
+    }
+
+    .icon-placeholder {
+      display: block;
+      margin: 0 auto 5px;
+      width: 30px;
+      height: 30px;
+      background-color: #ccc;
+      border-radius: 5px;
+    }
+
+    .product-section {
+      width: 80%;
+      margin: 0 auto 40px;
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .product-card {
+      flex: 1 1 250px;  
+      background-color: #fafafa;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+    }
+    .product-info h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .product-info p {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+    .product-info .btn-blue {
+      margin-top: 10px;
+    }
+
+    #footer {
+      border-top: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+    #footer a {
+      color: #666;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+    #footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      #container {
+        flex-direction: column;
+      }
+      #hero {
+        height: 300px;
+      }
+      #heroCard {
+        width: 80%;
+      }
+      .product-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header id="header">
+  <div id="logo">
+    <img src="https://via.placeholder.com/80x30.png?text=MS+Logo" alt="Microsoft Logo">
+    <strong>Microsoft</strong>
+  </div>
+  <nav id="navLinks">
+    <a href="#m365">Microsoft 365</a>
+    <a href="#teams">Teams</a>
+    <a href="#copilot">Copilot</a>
+    <a href="#windows">Windows</a>
+    <a href="#surface">Surface</a>
+    <a href="#xbox">Xbox</a>
+    <a href="#deals">Deals</a>
+    <a href="#business">Small Business</a>
+  </nav>
+</header>
+
+<div id="hero">
+  <div id="heroCard">
+    <h2>Meet Surface Pro</h2>
+    <p>This laptop’s unrivalled flexibility and AI features like Live Captions and<br>
+    Cocreator enable you to do more than you ever imagined.</p>
+    <a href="#" class="btn-blue">Shop now</a>
+  </div>
+</div>
+
+<div id="sliderDots">
+  ◀ ◉ ▶
+</div>
+
+<div id="quickLinks">
+  <a href="#surface">
+    <span class="icon-placeholder"></span>
+    Shop Surface devices
+  </a>
+  <a href="#xbox">
+    <span class="icon-placeholder"></span>
+    Shop Xbox games and consoles
+  </a>
+  <a href="#business">
+    <span class="icon-placeholder"></span>
+    Shop for your business
+  </a>
+  <a href="#windows">
+    <span class="icon-placeholder"></span>
+    Find your next PC
+  </a>
+  <a href="#m365">
+    <span class="icon-placeholder"></span>
+    Choose your Microsoft 365
+  </a>
+</div>
+
+<section class="product-section">
+  <div class="product-grid">
+    <article class="product-card" id="surface">
+      <img src="https://via.placeholder.com/600x400/0080D4/FFFFFF?text=Surface+Laptop" alt="Surface Laptop">
+      <div class="product-info">
+        <h3>Surface Laptop, Copilot+PC</h3>
+        <p>Unlock AI features like Live Captions and Cocreator with this exceptionally powerful laptop.</p>
+        <a class="btn-blue" href="#">Shop now</a>
+      </div>
+    </article>
+
+    <article class="product-card" id="xbox">
+      <img src="https://via.placeholder.com/600x400/107C10/FFFFFF?text=Xbox+Series+S" alt="Xbox Series S">
+      <div class="product-info">
+        <h3>Xbox Series S</h3>
+        <p>Next-gen performance in the smallest Xbox ever.</p>
+        <a class="btn-blue" href="#">Shop Xbox Series S</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://via.placeholder.com/600x400/0F0F0F/FFFFFF?text=Xbox+controllers" alt="Xbox controllers">
+      <div class="product-info">
+        <h3>Xbox controllers</h3>
+        <p>Elite, wireless, adaptive—find the controller that fits your style of play.</p>
+        <a class="btn-blue" href="#">Shop now</a>
+      </div>
+    </article>
+
+    <article class="product-card" id="business">
+      <img src="https://via.placeholder.com/600x400/333333/FFFFFF?text=Developer+Direct" alt="Developer Direct">
+      <div class="product-info">
+        <h3>Microsoft for Business</h3>
+        <p>Tune in January 23 at 10 AM PT to hear directly from the developers.</p>
+        <a class="btn-blue" href="#">Learn more</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer id="footer">
+  <p>
+    <a href="#m365">Microsoft 365</a> | 
+    <a href="#teams">Teams</a> | 
+    <a href="#windows">Windows</a> | 
+    <a href="#surface">Surface</a> | 
+    <a href="#xbox">Xbox</a> | 
+    <a href="#business">Small Business</a> | 
+    <a href="#copilot">Copilot</a> | 
+    <a href="#deals">Deals</a>
+  </p>
+  <p>
+    <a href="#">All Microsoft</a> | 
+    <a href="#">Search</a> | 
+    <a href="#">Cart</a> | 
+    <a href="#">Sign in</a>
+  </p>
+  <p>© 2025 Microsoft</p>
+</footer>
+
+</body>
+</html>
