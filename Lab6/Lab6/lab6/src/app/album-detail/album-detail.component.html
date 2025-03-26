@@ -1,0 +1,13 @@
+<button class="back-button" routerLink="..">Back</button>
+<h4>Album detail #{{album.id}}<span> by uID:{{album.userId}}</span></h4>
+
+<h1>{{album.title}}</h1>
+<button class="change-button" *ngIf="!change" (click)="changeable()">Change</button>
+<div *ngIf="change">
+  <input type="text" [(ngModel)]="album.title">
+  <button class="save-button" (click)="changeable()">Save</button>
+</div>
+
+<br><br>
+
+<button class="next-button" routerLink="photos">See Photos</button>
